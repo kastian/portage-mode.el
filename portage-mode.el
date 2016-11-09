@@ -25,7 +25,7 @@
 
 ;;; Commentary:
 
-;; Nano gentoo.nanorc syntax higlidht settings rewritten for emacs
+;; Nano gentoo.nanorc syntax higlight settings rewritten for emacs
 
 ;;; Code:
 
@@ -47,7 +47,8 @@
     ;; Package category 'app-emacs'
     ("^[[:blank:]]*.*/" 0 '((t (:foreground "cyan"))) t)
     ;; Masking regulators
-    ("^[[:blank:]]*\\(=\\|~\\|<\\|<=\\|=<\\|>\\|>=\\|=>\\)" 0 '((t (:foreground "brightmagenta"))) t)
+    ;; ("^[[:blank:]]*\\(=\\|~\\|<\\|<=\\|=<\\|>\\|>=\\|=>\\)" 0 '((t (:foreground "brightmagenta"))) t)
+    ("^[[:blank:]]*\\(~\\|<=\\|=<\\|>=\\|=>\\|=\\|<\\|>\\)" 0 '((t (:foreground "brightmagenta"))) t)
     ;; Comment
     ("#.*$" 0 '((t (:foreground "yellow"))) t)
     ;; Trailing whitespace are bad !
