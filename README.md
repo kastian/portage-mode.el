@@ -1,3 +1,3 @@
 # portage-mode.el
 
-Nano gentoo.nanorc syntax higlidht settings rewritten for emacs
+Nano gentoo.nanorc syntax higlight settings rewritten for emacs
