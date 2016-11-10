@@ -16,6 +16,4 @@ Add `(require 'portage-mode)` to `/etc/emacs/site-start.el`
 
 `sudo make uninstall`
 
-or
-
 Remove `(require 'portage-mode)` from `/etc/emacs/site-start.el`
