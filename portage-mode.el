@@ -41,7 +41,7 @@
     ;; Package slot number ':2'
     (":[^[:blank:]]+\\([[:blank:]]\\|$\\)" 0 '((t (:foreground "magenta"))) t)
     ;; Package architecture '~x86'
-    ("[~-]?\\<\\(alpha\\|amd64\\|arm\\|hppa\\|ia64\\|mips\\|ppc\\|ppc64\\|s390\\|sh\\|sparc\\(-fbsd\\)?\\|x86\\(-fbsd\\)?\\)\\>" 0 '((t (:foreground "white"))) t)
+    ("\\([~-]\\|[[:blank:]]+\\)\\<\\(alpha\\|amd64\\|arm\\|hppa\\|ia64\\|mips\\|ppc\\|ppc64\\|s390\\|sh\\|sparc\\(-fbsd\\)?\\|x86\\(-fbsd\\)?\\)\\>" 0 '((t (:foreground "white"))) t)
     ;; Package architecture '~*'
     ("[[:blank:]][*~-]?\\*" 0 '((t (:foreground "white"))) t)
     ;; Package category 'app-emacs'
