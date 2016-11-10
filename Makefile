@@ -1,5 +1,5 @@
-DIR="/usr/share/emacs/site-lisp/"
-PROGRAM="portage-mode.el"
+DIR=/usr/share/emacs/site-lisp/
+PROGRAM=portage-mode.el
 
 install:
 	cp "${PROGRAM}" "${DIR}"
