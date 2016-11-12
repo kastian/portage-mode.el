@@ -39,7 +39,7 @@
     ;; Package version '-3.3.9-r2'
     ("-[[:digit:]].*?\\([[:blank:]]\\|$\\)" 0 '((t (:foreground "magenta"))) t)
     ;; Package slot number ':2'
-    (":[^[:blank:]]+\\([[:blank:]]\\|$\\)" 0 '((t (:foreground "magenta"))) t)
+    (":[^[:blank:]]+?\\([[:blank:]]\\|$\\)" 0 '((t (:foreground "magenta"))) t)
     ;; Package architecture '~x86'
     ("\\([~-]\\|[[:blank:]]+\\)\\<\\(alpha\\|amd64\\|arm\\|hppa\\|ia64\\|mips\\|ppc\\|ppc64\\|s390\\|sh\\|sparc\\(-fbsd\\)?\\|x86\\(-fbsd\\)?\\)\\>" 0 '((t (:foreground "white"))) t)
     ;; Package architecture '~*'
@@ -47,7 +47,6 @@
     ;; Package category 'app-emacs'
     ("^[[:blank:]]*.*/" 0 '((t (:foreground "cyan"))) t)
     ;; Masking regulators
-    ;; ("^[[:blank:]]*\\(=\\|~\\|<\\|<=\\|=<\\|>\\|>=\\|=>\\)" 0 '((t (:foreground "brightmagenta"))) t)
     ("^[[:blank:]]*\\(~\\|<=\\|=<\\|>=\\|=>\\|=\\|<\\|>\\)" 0 '((t (:foreground "brightmagenta"))) t)
     ;; Comment
     ("#.*$" 0 '((t (:foreground "yellow"))) t)
