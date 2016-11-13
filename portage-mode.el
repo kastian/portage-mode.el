@@ -6,7 +6,7 @@
 ;; Maintainer: Konstantin Shakhnov <kastian@mail.ru>
 ;; Created: 9 Nov 2016
 ;; Keywords: gentoo, portage
-;; Homepage: http://example.com/foo
+;; Homepage: https://github.com/kastian/portage-mode.el
 
 ;; This file is not part of GNU Emacs.
 
@@ -21,7 +21,7 @@
 ;; GNU General Public License for more details.
 
 ;; You should have received a copy of the GNU General Public License
-;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
+;; along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 ;;; Commentary:
 
