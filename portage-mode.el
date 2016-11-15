@@ -33,9 +33,9 @@
   '(;; Package name.
     ("^.+$" 0 '((t (:foreground "green"))) t)
     ;; Enabled use flag 'openrc'
-    ("[[:blank:]]+\\+?[a-zA-Z0-9_-]+" 0 '((t (:foreground "brightred"))) t)
+    ("[[:blank:]]+\\+?[A-Za-z0-9+_@-]+" 0 '((t (:foreground "brightred"))) t)
     ;; Disabled use flag '-systemd'
-    ("[[:blank:]]+-[a-zA-Z0-9_-]+" 0 '((t (:foreground "brightblue"))) t)
+    ("[[:blank:]]+-[A-Za-z0-9+_@-]+" 0 '((t (:foreground "brightblue"))) t)
     ;; Package version '-3.3.9-r2'
     ("-[[:digit:]].*?\\([[:blank:]]\\|$\\)" 0 '((t (:foreground "magenta"))) t)
     ;; Package slot number ':2'
@@ -45,9 +45,9 @@
     ;; Package architecture '~*'
     ("[[:blank:]][*~-]?\\*" 0 '((t (:foreground "white"))) t)
     ;; Package category 'app-emacs'
-    ("^[[:blank:]]*.*/" 0 '((t (:foreground "cyan"))) t)
+    ("^[[:blank:]]*[^/]*/" 0 '((t (:foreground "cyan"))) t)
     ;; Masking regulators
-    ("^[[:blank:]]*\\(~\\|<=\\|=<\\|>=\\|=>\\|=\\|<\\|>\\)" 0 '((t (:foreground "brightmagenta"))) t)
+    ("^[[:blank:]]*\\(~\\|<=\\|>=\\|=\\|<\\|>\\)" 0 '((t (:foreground "brightmagenta"))) t)
     ;; Comment
     ("#.*$" 0 '((t (:foreground "yellow"))) t)
     ;; Trailing whitespace are bad !
