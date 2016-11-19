@@ -47,7 +47,7 @@
     ;; Package category 'app-emacs'
     ("^[[:blank:]]*[^/]*/" 0 '((t (:foreground "cyan"))) t)
     ;; Masking regulators
-    ("^[[:blank:]]*\\(~\\|<=\\|>=\\|=\\|<\\|>\\)" 0 '((t (:foreground "brightmagenta"))) t)
+    ("^[[:blank:]]*\\(~\\|\\(<\\|>\\)?=\\|<\\|>\\)" 0 '((t (:foreground "brightmagenta"))) t)
     ;; Comment
     ("#.*$" 0 '((t (:foreground "yellow"))) t)
     ;; Trailing whitespace are bad !
@@ -62,11 +62,10 @@
 
 ;;;###autoload
 (add-to-list 'auto-mode-alist
-	     '("/etc/portage/package\\.\\(accept_keywords\\|env\\|keywords\\|mask\\|unmask\\|use\\)\\(/.*$\\)?" . portage-mode))
+	     '("/etc/portage/package\\.\\(\\(accept_\\)?keywords\\|env\\|\\(un\\)?mask\\|use\\)\\(/.*$\\)?" . portage-mode))
 ;;;###autoload
 (add-to-list 'auto-mode-alist
 	     '("/var/lib/portage/world" . portage-mode))
-
 
 (provide 'portage-mode)
 
